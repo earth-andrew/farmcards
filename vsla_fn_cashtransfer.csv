@@ -1,0 +1,12 @@
+fID,activity_ids,named_as_vars,function_rhs,function_lhs,add_replace,phases
+highYieldFn,8 10 12 14 15 16,b d f h j k,(min (list (b + h) (d + j) (f + k))) * yield_high,playerResources,add,4 8 12
+remBFn,7 8 10 12 14 15 16,a b d f h j k,a + b - (min (list (b + h) (d + j) (f + k))),7,replace,4 8 12
+remDFn,8 9 10 12 14 15 16,b c d f h j k,c + d - (min (list (b + h) (d + j) (f + k))),9,replace,4 8 12
+remFFn,8 10 11 12 14 15 16,b d g f h j k,f + g - (min (list (b + h) (d + j) (f + k))),11,replace,4 8 12
+lowYieldFn,7 9 11,a c g,(min (list a c g)) * yield_low,playerResources,add,4 8 12
+vslaInterestFn,3,x,round ( x * (1 + vsla_int_rate)),3,replace,1 2 3 4 5 6 7 8 9 10 11 12
+lenderInterestFn,4,x,round ( x * (1 + lender_int_rate)),4,replace,1 2 3 4 5 6 7 8 9 10 11 12
+payoutVSLA,2,x,round (x / (max (list 1 count_shares)) * payoff_vsla),playerResources,add,12
+unconditionalTransfer,1,a,cash_transfer,playerResources,add,0
+initial_benefit,1,a,first_endowment,playerResources,add,0
+finalScore,3 4,a b,0 - a - b,playerResources,add,13

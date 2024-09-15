@@ -1,0 +1,2 @@
+fID,activity_ids,named_as_vars,function_rhs,function_lhs,add_replace
+finalScore,3 4,a b,0 - a - b,playerResources,add

@@ -1,0 +1,5 @@
+sessionID,gameID,years,phases,activityListFileName,functionListFileName,shockListFileName,endFunctionListFileName,nonplayerFunctionListFileName,vsla_int_rate,lender_int_rate,endowment,yield_low,yield_high,cash_transfer,vsla_chest,first_endowment
+101,baseline,2,12,vsla_actions.csv,vsla_fn.csv,vsla_shock.csv,vsla_fn_endgame.csv,vsla_fn_nonplayer.csv,0.05,0.25,5,16,32,0,0,10
+102,subsidy,2,12,vsla_actions.csv,vsla_fn.csv,vsla_shock.csv,vsla_fn_endgame.csv,vsla_fn_nonplayer.csv,0.05,0.25,5,16,38,0,0,10
+103,player_cashtransfer,2,12,vsla_actions.csv,vsla_fn_cashtransfer.csv,vsla_shock.csv,vsla_fn_endgame.csv,vsla_fn_nonplayer.csv,0.05,0.25,5,16,32,50,0,10
+104,vsla_cash_transfer,2,12,vsla_actions_vsla_transfer.csv,vsla_fn.csv,vsla_shock.csv,vsla_fn_endgame.csv,vsla_fn_nonplayer.csv,0.05,0.25,5,16,32,0,300,10

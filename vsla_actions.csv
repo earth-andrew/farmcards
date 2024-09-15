@@ -1,0 +1,18 @@
+ID,activity_name,image,req,initial,amt_min,amt_max,annual,badge,summary,phase_shown,cost,benefit,supply_per,payment,adds_to,takes_from,negates
+1,join_vsla,vsla-join,,0,0,1,1,1,0,1,0,0,0,0,,,
+2,share,vsla-share,1,0,1,5,1,0,1,,1,0,0,0,vsla_chest,,
+3,borrow_vsla,vsla-borrow,1 2,0,0,3 * (item 1 (item tempLocal playerActivities)),0,0,1,,0,1,0,0,,vsla_chest,
+4,borrow_lender,lender-borrow,,0,0,9999999,0,0,1,,0,1,0,0,,,
+5,pay_vsla,vsla-pay,3,0,0,9999999,0,0,0,,1,0,0,0,,,3
+6,pay_lender,lender-pay,4,0,0,9999999,0,0,0,,1,0,0,0,,,4
+7,land_prep_low,land-prep-low,,0,0,9999999,1,1,0,13,3,0,0,0,,,
+8,land_prep_high,land-prep-high,,0,0,9999999,1,1,0,13,7,0,0,0,,,
+9,grow_low,grow-low,,0,0,(item 16 (item tempLocal playerActivities)) - (item 9 (item tempLocal playerCurrentSelections)),1,1,0,1 5 9,3,0,0,0,,,
+10,grow_high,grow-high,,0,0,(item 16 (item tempLocal playerActivities)) - (item 8 (item tempLocal playerCurrentSelections)),1,1,0,1 5 9,7,0,0,0,,,
+11,harvest_low,harvest-low,,0,0,9999999,1,1,0,13,3,0,0,0,,,
+12,harvest_high,harvest-high,,0,0,9999999,1,1,0,13,7,0,0,0,,,
+13,2wt,2wt,,0,0,9999999,0,1,0,13,150,0,5,2,,,
+14,land_prep_2wt,land-prep-2wt,13,0,0,9999999,1,1,0,13,3,0,0,0,,,
+15,grow_2wt,grow-2wt,13,0,0,9999999,1,1,0,13,3,0,0,0,,,
+16,harvest_2wt,harvest-2wt,13,0,0,9999999,1,1,0,13,3,0,0,0,,,
+17,add_plot,add-plot,,5,0,9999999,0,0,1,,50,0,0,0,,,

@@ -1,0 +1,4 @@
+ID,shock_name,pAffect,ind?,target_act_var,pLose,amount,phase_occur
+1,cyclone,0.1,0,7,0.6,0,3 4 7 8 11 12
+2,wedding,0.1,1,playerResources,1,10,1 2 3 4 5 6 7 8 9 10 11 12
+3,funeral,0.1,1,playerResources,1,15,1 2 3 4 5 6 7 8 9 10 11 12

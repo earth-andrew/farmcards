@@ -1,0 +1,5 @@
+fID,function_rhs,function_lhs,add_replace,phases
+countShares,reduce [ [a b] -> (ifelse-value (is-number? a) [a][item 1 a ]) + item 1 b] playerActivities,count_shares,replace,12
+payoffVSLA,max(list 0 (vsla_chest - opening_vsla)),payoff_vsla,replace,12
+reduceVSLA,min(list opening_vsla vsla_chest),vsla_chest,replace,12
+markVSLA,vsla_chest,opening_vsla,replace,0 12
